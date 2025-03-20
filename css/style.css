@@ -1,0 +1,140 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* body {
+    background-color: #ccc;
+    background: url(../assets/background\ abstract.jpg) no-repeat top center/cover;
+} */
+
+body * {
+    font-family: 'Inter', sans-serif;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Mantém o vídeo atrás de tudo */
+    
+}
+
+
+
+#container {
+    max-width: 90%;
+    padding: 8px 24px;
+    width: 360px;
+    height: auto;
+    border: 1px solid #fff;
+    margin: 30px auto 30px auto;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+#profile {
+text-align: center;
+padding: 10px;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 10px 4px 6px rgba(255, 254, 254, 0.2);
+    
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0px auto 0px auto;
+    color: #fff;
+    text-shadow: #242424 1px 3px 2px;
+}
+
+/* lista links*/
+ul {
+    padding-top: 28px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li a {
+    padding: 16px 24px;
+    align-items: center;
+    border: 1px solid #ffff;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-radius: 2em 1em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2em 1em;
+    border: 1.5px solid #AFF89B;
+    color: #000;
+}
+
+#social {
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #fff;
+}
+
+#social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid #AFF89B;
+}
+
+footer {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #fff;
+}
